@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-# Current stable version of Ruby
-#gem 'ruby', '2.2.2'
+# Omniauth for login via FB, Twitter, etc
+gem 'omniauth'
 # Ensure deployment with Heroku goes smoothly
 gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

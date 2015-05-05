@@ -1,0 +1,30 @@
+/*
+ * Styling for Pages Controller 
+ */
+
+* {
+	box-sizing: border-box;
+}
+
+#welcome {
+	
+	/* Title of the app */
+	.title {
+	
+		h3 {
+			color: blue;
+		}
+	}
+
+	/* Sign-up and Log-in links */
+	.main_links {
+	
+	}
+
+	position: absolute;
+	width: 150px;
+	margin: -50px 0 0 -50px;
+  	left: 50%;
+  	top: 50%;
+}
+
