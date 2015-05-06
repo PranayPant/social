@@ -2,29 +2,41 @@
  * Styling for Pages Controller 
  */
 
-* {
-	box-sizing: border-box;
-}
 
+/* Welcome page */
 #welcome {
 	
+	//height: 100px;
+	//width: 100px;
+	//background-color: hsla(240, 50%, 50%, 0.5);
+
 	/* Title of the app */
 	.title {
 	
-		h3 {
+		h1 {
 			color: blue;
-		}
+			text-align: center;
+		}	
+	
+		position: absolute;
+		width: 150px;
+		margin: -50px 0 0 -50px;
+		left: 50%;
+		top: 30%
 	}
 
 	/* Sign-up and Log-in links */
-	.main_links {
+	.main-links {
 	
+		position: absolute;
+		width: 150px;
+		margin: -50px 0 0 -50px;
+		left: 50%;
+		top: 50%;
 	}
-
-	position: absolute;
-	width: 150px;
-	margin: -50px 0 0 -50px;
-  	left: 50%;
-  	top: 50%;
 }
+	
+
+
+
 

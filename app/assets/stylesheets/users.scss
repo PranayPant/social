@@ -1,3 +1,39 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Header for sign-up page */
+h2 {
+	text-align: center;
+}
+
+/* User sign-up / log-in forms */
+.log-in {
+
+	position: relative;
+	width: 200px;
+	height: 300px;
+	left: 45%;
+
+	.links {
+		position: relative;
+		top: 10%;
+	}
+}
+
+.sign-up {
+
+	position: relative;
+	width: 200px;
+	left: 45%;
+
+	.links {
+		position: relative;
+		top: 10%;
+	}
+}
+
+/* Log out button */
+.log-out {
+	position: absolute;
+	left: 92%;
+	top: 5%;
+}
+
