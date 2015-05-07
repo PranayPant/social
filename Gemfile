@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Omniauth for login via FB, Twitter, etc
 gem 'omniauth'
+gem 'omniauth-facebook'
 # Ensure deployment with Heroku goes smoothly
 gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
