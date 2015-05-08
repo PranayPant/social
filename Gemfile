@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Omniauth for login via FB, Twitter, etc
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'oauth2'
 # Ensure deployment with Heroku goes smoothly
 gem 'rails_12factor'
 # Use PostgreSQL
@@ -29,7 +30,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Devise for authentication and authorization
-gem 'devise', '~> 3.4.0'
+gem 'devise', git: 'https://github.com/plataformatec/devise'
 
 # Use ActiveModel has_secure_password
 #gem 'bcrypt', '~> 3.1.7'

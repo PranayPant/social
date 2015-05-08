@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  
+  devise_for :users, :controllers => { 
+    omniauth_callbacks: "callbacks" 
+  }
+
+  # Devise re-direct after user authenticated
+  authenticated :user do
+    # Rails 4 users must specify the 'as' option to give it a unique name
+    root :to => "users#show", :as => "profile"
+  end
 
   # You can have the root of your site routed with "root"
   root to: "pages#welcome" 
