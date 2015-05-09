@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
 
-	# Devise authentication
 	before_action :authenticate_user!
 
 	def index
@@ -9,7 +8,6 @@ class UsersController < ApplicationController
 
 	def show
 		@user = current_user
-		
 	end
 
 end
