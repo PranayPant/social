@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Ruby directive for current stable ruby version
+ruby "2.2.2"
+
 # Omniauth for login via FB, Twitter, etc
 gem 'omniauth'
 gem 'omniauth-facebook'
