@@ -12,4 +12,5 @@ class ApplicationController < ActionController::Base
   		sign_in(user)
   		redirect_to user_path(user.id)
   	end
+  	
 end
