@@ -17,7 +17,6 @@ class CallbacksController < Devise::OmniauthCallbacksController
         if @user.persisted?
       		sign_in_and_redirect(@user)
       	else
-      		byebug
       		provider = @user.provider
       		uid = @user.uid
       		@user = User.find_by_email(@user.email)
