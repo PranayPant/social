@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Pesky file - (modified content), it says...
+vendor/cache/ruby/2.2.0/bundler/gems/*
