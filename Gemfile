@@ -3,11 +3,16 @@ source 'https://rubygems.org'
 # Ruby directive for current stable ruby version
 ruby "2.2.2"
 
-# Omniauth for login via FB, Twitter, etc
+# Omniauth for login via FB, Twitter, etc.
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
-gem 'oauth2'
+gem 'oauth2', :require => true
+# Google API support
+gem 'google-api-client'
+# Gmail Integration
+gem 'gmail_xoauth', :require => true
+gem 'gmail', :require => true, git: "https://github.com/gmailgem/gmail.git"
 # Ensure deployment with Heroku goes smoothly
 gem 'rails_12factor', group: :production
 # Use PostgreSQL
@@ -32,7 +37,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+#gem 'sdoc', '~> 0.4.0', group: :doc
 # Devise for authentication and authorization
 gem 'devise', git: 'https://github.com/plataformatec/devise'
 

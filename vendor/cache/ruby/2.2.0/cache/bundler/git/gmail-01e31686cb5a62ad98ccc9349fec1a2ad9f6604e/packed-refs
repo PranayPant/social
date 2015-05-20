@@ -1,0 +1,13 @@
+# pack-refs with: peeled fully-peeled 
+8f2e8f67a556b34a368ea75d64b0078f25958307 refs/heads/extend_imap_without_eval
+5c254772ca1a44414fa339562b187bbd28fb523a refs/heads/fix_specs
+831658c02e810b9e3c7621d33549faf4d7745dc5 refs/heads/master
+846cd72a83159d2a08f16ee6996a0fd253f8638e refs/heads/xoauth2
+d37cc2a82167b912d23bc9d601acc3c4b121dbe1 refs/tags/v0.3.0
+e8f5fcfad8ef18eb0397c590ca175a9fb9000800 refs/tags/v0.3.2
+a1cadfb46ad063ea7bc22cad64495a900a7b4748 refs/tags/v0.3.3
+^5b7327a33474eb69e84e1b25d0ff23c4d36acf4b
+2831fd9d5162fe6dab10d9eff67925331e1f7de0 refs/tags/v0.3.4
+^4038d00ebce40e8c80090b306f6304c7cb198675
+73c1d418e6f4e1aa774182ca50d70fa1309cd17f refs/tags/v0.4.0
+^84458f6de458e55e5dcabf88990e5a08fac4e8d6

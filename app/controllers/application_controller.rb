@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   	end
 
   	def sign_in_and_redirect(user)
-        sign_in(user)
+      sign_in(user)
   		redirect_to user_path(user.id)
   	end
   	

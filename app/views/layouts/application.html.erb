@@ -6,29 +6,20 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+    <!-- Facebook SDK -->
+    <%= javascript_include_tag "facebook", "data-turbolinks-track" => true %>
 
-<!-- FB SDK -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '633593176771287',
-      xfbml      : true,
-      version    : 'v2.3'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-<!-- FB SDK -->
+    <!-- Google Maps -->
+    <script 
+        type="text/javascript" 
+        src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false">
+    </script>
+    <%= javascript_include_tag "gmaps", "data-turbolinks-track" => true %>
 
 <%= yield %>
 
 </body>
+
 </html>
