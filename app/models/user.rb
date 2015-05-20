@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   def self.from_omniauth(auth)
 
-    # Extract data from request.env["omniauth.auth"]
+    # Extract data from request hash
     email = auth.info.email
     provider = auth.provider
     uid = auth.uid
