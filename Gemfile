@@ -8,11 +8,12 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'oauth2', :require => true
-# Google API support
-gem 'google-api-client'
+
 # Gmail Integration
 gem 'gmail_xoauth', :require => true
 gem 'gmail', :require => true, git: "https://github.com/gmailgem/gmail.git"
+gem 'google-api-client', git: "https://github.com/google/google-api-ruby-client.git"
+
 # Ensure deployment with Heroku goes smoothly
 gem 'rails_12factor', group: :production
 # Use PostgreSQL

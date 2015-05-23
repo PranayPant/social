@@ -8,11 +8,31 @@ class UsersController < ApplicationController
 
 	def show
 		@user = current_user
-		# Gmail authentication
-        #imap = Net::IMAP.new('imap.gmail.com', 993, usessl = true, certs = nil, verify = false)
 
-        #imap.authenticate('XOAUTH2', @user.email, @user.token)
-        
+		require 'google/api_client'
+		require 'google/api_client/client_secrets'
+		require 'google/api_client/auth/installed_app'
+	
+		client = Google::APIClient.new(
+  			:application_name => 'my-social-hub',
+		)
+
+		gmail_api = client.discovered_api('gmail', 'v1')
+
+		client_secrets = Google::APIClient::ClientSecrets.load
+
+		flow = Google::APIClient::InstalledAppFlow.new(
+  			:client_id => client_secrets.client_id,
+  			:client_secret => client_secrets.client_secret,
+  			:scope => ['https://mail.google.com/']
+		)
+		client.authorization = flow.authorize
+
+		@result = client.execute(
+  			:api_method => gmail_api.users.labels.list,
+  			:parameters => {'userId' => 'me'}
+		)
+
 	end
 
 end

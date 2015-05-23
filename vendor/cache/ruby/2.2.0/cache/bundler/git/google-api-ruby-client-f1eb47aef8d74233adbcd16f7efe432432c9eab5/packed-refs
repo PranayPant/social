@@ -1,0 +1,62 @@
+# pack-refs with: peeled fully-peeled 
+ae0e72ce13bd3532b09ee4f051d506a9a693c9b4 refs/heads/0.6
+8b2c139778d086eaad39eb9d21c6fa6b5e854947 refs/heads/beta
+ccc25c2a022a3be18578b329cc2e79c850ff31d4 refs/heads/build_cleanup
+82f69445ad2d63d946baaaddd8d0563faba8e975 refs/heads/master
+5326f5c2a7fcd37e1e8d7da19406f81b881e1c99 refs/heads/release-0.7
+f368e1d521486fcb9726e4b31a1ae32eb838247d refs/tags/0.8.0
+3eac0867978f405cb3bb5fdb1db8c5a98fc26056 refs/tags/0.8.1
+fe1e13def76957fb16380e0cf6ffab7adc6f8f2d refs/tags/0.8.1.1
+db23424881b1424a848ad4ef9e7850159bf02934 refs/tags/0.8.2
+5f74a6b13cb5e0ceabb61721c7d16d400c75e250 refs/tags/google-api-client-0.1.0
+^0246ecf1f56c95cdc5a736a7e27f033ef0c984c0
+9723b85239cedd369c1199218f2359e6a87751de refs/tags/google-api-client-0.1.1
+^82eac99d152cdd4d9788af0f50b83ca28195c1d8
+4a23eb542dbb3138717f41f79fa554d861253e4a refs/tags/google-api-client-0.1.2
+^d6ed864b0ae99a2791faf80be73df0b34fed0333
+030a7f7026fd3ef6b28350a867eeb30ee1f290a4 refs/tags/google-api-client-0.1.3
+^76fe65a650d2fe8737956942edf8e6dea5da896a
+4b863f00a5e27bf4bed1a60e39541cd37928d32a refs/tags/google-api-client-0.2.0
+^c7e96763c7fbe1317a23b78f9d7cf2b04383f24e
+acc18b042247a18c08ce24d822106686e1df7f8f refs/tags/google-api-client-0.3.0
+^cef31d7bca20b76132f1a9113dc6869c02beedc6
+cc7bf2c2fdff43f22316d4b8e90beb801ff127a1 refs/tags/google-api-client-0.4.0
+^9fd15b31c4e6e2c3af07f8f4812acdda09ca5594
+0921478280e507004ec76d76c02a3d05782e84db refs/tags/google-api-client-0.4.1
+^f1c5b65baf5a01a6108e6d4e295d2936426c5110
+52469283acdef03bc415b26b2c6600c0cef53e6b refs/tags/google-api-client-0.4.2
+^0dee0cbc521c9a765aa27dd39797dcdb4820cb8a
+edd4d0e9a43d69e50f03bf36faff090e6e809e82 refs/tags/google-api-client-0.4.3
+^96b697bd5f8d903c0cffbc3ea98f2563450a1912
+2481eb8f5da13b1b388eac2fc7a988ec22d3846d refs/tags/google-api-client-0.4.5
+^e77169a7f4bb0097a8e1900b931e78abb4c82070
+23dda327d9f8bdfcead34c3edbb20a1089981e1f refs/tags/google-api-client-0.4.6
+^2f630f6c1d89c50b83bd3b4cc88854ca6e95629a
+8c2763e9017d97a905263027a0a012ff4050596e refs/tags/google-api-client-0.4.7
+^2c567fd720180db894b204dd518b50297712cbe3
+4c499f6da7ae1795f03d74c893f6eece259926a0 refs/tags/google-api-client-0.5.0
+^3d157007f6bec653f524a4df5e4e69d825df9765
+e5eeea8ad6a51de6ae90f50a6025dd705b842352 refs/tags/google-api-client-0.6.0
+^ee6f8ae6f983f2beb1afa94f9332f9e244fbbb9d
+cf5870a36f673527fe28cf8ba44c7efd6061c6bf refs/tags/google-api-client-0.6.1
+^f369139b32850e2a32e3dc9faf0fe2deb7b2b996
+608f7b19aab1e194e87aecc8c40d40f5247c0908 refs/tags/google-api-client-0.6.2
+^0dafa5e4eebaeabecb4cc8169effc1a55af6d83c
+24c09451b844c49493ce25f69a6289df2d9a1822 refs/tags/google-api-client-0.6.3
+^bfafe1b0c8504e8016c897aefb95ba966d81ae3a
+f8dfe2c5d9148da4cb0617317d93c102686d0dee refs/tags/google-api-client-0.7.0
+^f3821f99170dfa0e8b2cce8f2bc2b5b82725c45f
+ee6897d401d6768712a5abfbec4836a3cada93f8 refs/tags/google-api-client-0.7.0.rc1
+^855a7fc823f79d4ac0d025b7140ff5c13abf749c
+3a749b0448815f9743a31739a5515c5758436008 refs/tags/google-api-client-0.7.0.rc2
+^2a3965d976ee150ea93139b7572b39ed36272dc1
+042e3c009bd93a38175584092dfbbf48dd564810 refs/tags/google-api-client-0.7.1
+^df72a3681da56b7eac8e17524b49008d4b28e32f
+c767096618bd58df097a7f6f741fee64c1968b75 refs/tags/v0.8.3
+^fb3fc4623f6070467abdaa5e642a2e7680afc0ab
+80d3edfa040f931a1996a85f7c78dd6e641ff385 refs/tags/v0.8.4
+^f008d518f04b5619c26af0d532b8ee98344e6ae0
+03bdb673dc9dddd465befe55be8bdc9cdccd6139 refs/tags/v0.8.5
+^ae8a15ce76c696274aa6e11c4b92b9cb881945df
+084e3072ce8b3ba0e09708d60822983a19c462e3 refs/tags/v0.8.6
+^15853007bf1fc8ad000bb35dafdd3ca6bfa8ae26

@@ -1,0 +1,35 @@
+ae0e72ce13bd3532b09ee4f051d506a9a693c9b4		branch '0.6' of https://github.com/google/google-api-ruby-client
+8b2c139778d086eaad39eb9d21c6fa6b5e854947		branch 'beta' of https://github.com/google/google-api-ruby-client
+ccc25c2a022a3be18578b329cc2e79c850ff31d4		branch 'build_cleanup' of https://github.com/google/google-api-ruby-client
+82f69445ad2d63d946baaaddd8d0563faba8e975		branch 'master' of https://github.com/google/google-api-ruby-client
+5326f5c2a7fcd37e1e8d7da19406f81b881e1c99		branch 'release-0.7' of https://github.com/google/google-api-ruby-client
+f368e1d521486fcb9726e4b31a1ae32eb838247d	not-for-merge	tag '0.8.0' of https://github.com/google/google-api-ruby-client
+3eac0867978f405cb3bb5fdb1db8c5a98fc26056	not-for-merge	tag '0.8.1' of https://github.com/google/google-api-ruby-client
+fe1e13def76957fb16380e0cf6ffab7adc6f8f2d	not-for-merge	tag '0.8.1.1' of https://github.com/google/google-api-ruby-client
+db23424881b1424a848ad4ef9e7850159bf02934	not-for-merge	tag '0.8.2' of https://github.com/google/google-api-ruby-client
+5f74a6b13cb5e0ceabb61721c7d16d400c75e250	not-for-merge	tag 'google-api-client-0.1.0' of https://github.com/google/google-api-ruby-client
+9723b85239cedd369c1199218f2359e6a87751de	not-for-merge	tag 'google-api-client-0.1.1' of https://github.com/google/google-api-ruby-client
+4a23eb542dbb3138717f41f79fa554d861253e4a	not-for-merge	tag 'google-api-client-0.1.2' of https://github.com/google/google-api-ruby-client
+030a7f7026fd3ef6b28350a867eeb30ee1f290a4	not-for-merge	tag 'google-api-client-0.1.3' of https://github.com/google/google-api-ruby-client
+4b863f00a5e27bf4bed1a60e39541cd37928d32a	not-for-merge	tag 'google-api-client-0.2.0' of https://github.com/google/google-api-ruby-client
+acc18b042247a18c08ce24d822106686e1df7f8f	not-for-merge	tag 'google-api-client-0.3.0' of https://github.com/google/google-api-ruby-client
+cc7bf2c2fdff43f22316d4b8e90beb801ff127a1	not-for-merge	tag 'google-api-client-0.4.0' of https://github.com/google/google-api-ruby-client
+0921478280e507004ec76d76c02a3d05782e84db	not-for-merge	tag 'google-api-client-0.4.1' of https://github.com/google/google-api-ruby-client
+52469283acdef03bc415b26b2c6600c0cef53e6b	not-for-merge	tag 'google-api-client-0.4.2' of https://github.com/google/google-api-ruby-client
+edd4d0e9a43d69e50f03bf36faff090e6e809e82	not-for-merge	tag 'google-api-client-0.4.3' of https://github.com/google/google-api-ruby-client
+2481eb8f5da13b1b388eac2fc7a988ec22d3846d	not-for-merge	tag 'google-api-client-0.4.5' of https://github.com/google/google-api-ruby-client
+23dda327d9f8bdfcead34c3edbb20a1089981e1f	not-for-merge	tag 'google-api-client-0.4.6' of https://github.com/google/google-api-ruby-client
+8c2763e9017d97a905263027a0a012ff4050596e	not-for-merge	tag 'google-api-client-0.4.7' of https://github.com/google/google-api-ruby-client
+4c499f6da7ae1795f03d74c893f6eece259926a0	not-for-merge	tag 'google-api-client-0.5.0' of https://github.com/google/google-api-ruby-client
+e5eeea8ad6a51de6ae90f50a6025dd705b842352	not-for-merge	tag 'google-api-client-0.6.0' of https://github.com/google/google-api-ruby-client
+cf5870a36f673527fe28cf8ba44c7efd6061c6bf	not-for-merge	tag 'google-api-client-0.6.1' of https://github.com/google/google-api-ruby-client
+608f7b19aab1e194e87aecc8c40d40f5247c0908	not-for-merge	tag 'google-api-client-0.6.2' of https://github.com/google/google-api-ruby-client
+24c09451b844c49493ce25f69a6289df2d9a1822	not-for-merge	tag 'google-api-client-0.6.3' of https://github.com/google/google-api-ruby-client
+f8dfe2c5d9148da4cb0617317d93c102686d0dee	not-for-merge	tag 'google-api-client-0.7.0' of https://github.com/google/google-api-ruby-client
+ee6897d401d6768712a5abfbec4836a3cada93f8	not-for-merge	tag 'google-api-client-0.7.0.rc1' of https://github.com/google/google-api-ruby-client
+3a749b0448815f9743a31739a5515c5758436008	not-for-merge	tag 'google-api-client-0.7.0.rc2' of https://github.com/google/google-api-ruby-client
+042e3c009bd93a38175584092dfbbf48dd564810	not-for-merge	tag 'google-api-client-0.7.1' of https://github.com/google/google-api-ruby-client
+c767096618bd58df097a7f6f741fee64c1968b75	not-for-merge	tag 'v0.8.3' of https://github.com/google/google-api-ruby-client
+80d3edfa040f931a1996a85f7c78dd6e641ff385	not-for-merge	tag 'v0.8.4' of https://github.com/google/google-api-ruby-client
+03bdb673dc9dddd465befe55be8bdc9cdccd6139	not-for-merge	tag 'v0.8.5' of https://github.com/google/google-api-ruby-client
+084e3072ce8b3ba0e09708d60822983a19c462e3	not-for-merge	tag 'v0.8.6' of https://github.com/google/google-api-ruby-client
