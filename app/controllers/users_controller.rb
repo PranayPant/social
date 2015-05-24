@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 		require 'google/api_client/auth/installed_app'
 	
 		client = Google::APIClient.new(
-  			:application_name => 'my-social-hub',
+  			:application_name => 'my-social-hub'
 		)
 
 		gmail_api = client.discovered_api('gmail', 'v1')
