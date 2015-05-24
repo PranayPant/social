@@ -26,12 +26,13 @@ class UsersController < ApplicationController
   			:client_secret => client_secrets.client_secret,
   			:scope => ['https://mail.google.com/']
 		)
-		client.authorization = flow.authorize
+		
+		#client.authorization = flow.authorize
 
-		@result = client.execute(
-  			:api_method => gmail_api.users.labels.list,
-  			:parameters => {'userId' => 'me'}
-		)
+		#@result = client.execute(
+  		#	:api_method => gmail_api.users.labels.list,
+  		#	:parameters => {'userId' => 'me'}
+		#)
 
 	end
 
