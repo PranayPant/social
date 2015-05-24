@@ -22,5 +22,7 @@
 </div>
 
 <div>
-	<%= @result %>
+	<%= "Labels:" %>
+	<%= "No labels found" if @result.data.labels.empty? %>
+	<%= @result.data.labels.length %>
 </div>

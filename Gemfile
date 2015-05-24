@@ -17,7 +17,7 @@ gem 'google-api-client', git: "https://github.com/google/google-api-ruby-client.
 # Ensure deployment with Heroku goes smoothly
 gem 'rails_12factor', group: :production
 # Use Puma as the production server
-gem 'puma', group: :production
+gem 'puma'
 # Use PostgreSQL
 gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
