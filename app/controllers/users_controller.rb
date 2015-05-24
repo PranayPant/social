@@ -27,7 +27,7 @@ class UsersController < ApplicationController
   			:scope => ['https://mail.google.com/']
 		)
 		
-		#client.authorization = flow.authorize
+		client.authorization = flow.authorize
 
 		#@result = client.execute(
   		#	:api_method => gmail_api.users.labels.list,
