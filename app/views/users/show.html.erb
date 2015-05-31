@@ -1,28 +1,30 @@
 
-<!-- Facebook 'Like' plug-in --> 
-<div
-	id="fb-like"
-	class="fb-like"
-  	data-share="true"
-  	data-width="450"
-  	data-show-faces="true">
-</div>
-
-<!-- Google Maps - a random map -->
-<div id="map_div" style="height: 200px;"></div>
-
-<!-- Log out button  -->
-<div class="log-out">
-	<%= link_to "Log out", destroy_user_session_path, 
-	:method => :delete, :class => "btn btn-danger" %>
-</div>
-
 <div class="user-profile">
-	<h1> <%= @user.email %> </h1>
+	<h1> <%= @user.name %> </h1>
 </div>
 
-<div>
-	<%= "Labels:" %>
-	<%= "No labels found" if @result.data.labels.empty? %>
-	<%= @result.data.labels.length %>
+<div class="accounts">
+	
+	<div class="auth">
+		<% @have_auth.each do |a| %>
+			<%= a.provider %><br>
+		<% end %>	
+	</div>
+
+	<div class="no-auth">
+		<% @need_auth_names.each do |provider| %>
+			<%= render partial: 'devise/shared/account_auth', locals: {provider: provider} %><br>
+		<% end %>
+	</div>
+	 
 </div>
+
+<!-- Render authenticated account content -->
+<div class="account-content">
+	<% @current_user.accounts.each do |a| %>
+		<% if a.is_authenticated %>
+			<%= render partial: a.provider %>
+		<% end %>
+	<% end %>
+</div>
+

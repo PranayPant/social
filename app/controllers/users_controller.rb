@@ -2,38 +2,16 @@ class UsersController < ApplicationController
 
 	before_action :authenticate_user!
 
+	@@all_accounts = ['google_oauth2', 'facebook']
+
 	def index
 	
 	end
 
 	def show
-		@user = current_user
-
-		require 'google/api_client'
-		require 'google/api_client/client_secrets'
-		require 'google/api_client/auth/installed_app'
-	
-		client = Google::APIClient.new(
-  			:application_name => 'my-social-hub'
-		)
-
-		gmail_api = client.discovered_api('gmail', 'v1')
-
-		client_secrets = Google::APIClient::ClientSecrets.load
-
-		flow = Google::APIClient::InstalledAppFlow.new(
-  			:client_id => client_secrets.client_id,
-  			:client_secret => client_secrets.client_secret,
-  			:scope => ['https://mail.google.com/']
-		)
-		
-		client.authorization = flow.authorize
-
-		@result = client.execute(
-  			:api_method => gmail_api.users.labels.list,
-  			:parameters => {'userId' => 'me'}
-		)
-
+		@user            =  current_user
+		@have_auth       =  @user.accounts
+		@need_auth_names =  @@all_accounts - @have_auth.map{|x| x.provider}
 	end
 
 end

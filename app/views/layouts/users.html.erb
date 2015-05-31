@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+    <!-- Facebook SDK -->
+    <%= javascript_include_tag "facebook", "data-turbolinks-track" => true %>
+
+    <!-- Google Maps -->
+    <script 
+        type="text/javascript" 
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp">
+    </script>
+    <%= javascript_include_tag "gmaps", "data-turbolinks-track" => true %>
+
+    <!-- Log out button  -->
+    <div class="log-out">
+      <%= link_to "Log out", destroy_user_session_path, 
+      :method => :delete, :class => "btn btn-danger" %>
+    </div>
+
+<%= yield %>
+
+</body>
+
+</html>

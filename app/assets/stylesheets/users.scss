@@ -13,6 +13,7 @@ h2 {
 	left: 45%;
 
 	.links {
+
 		position: relative;
 		top: 10%;
 	}
@@ -35,6 +36,14 @@ h2 {
 	position: absolute;
 	left: 92%;
 	top: 5%;
+}
+
+/* Authenticated accounts */
+.accounts {
+
+	.auth {
+		color: green;
+	}
 }
 
 /* FB Like Plug-in */
