@@ -10,11 +10,12 @@ class User < ActiveRecord::Base
   def self.from_omniauth(auth)
 
     # Extract data from request hash
-    email    = auth.info.email
-    provider = auth.provider
-    uid      = auth.uid
-    token    = auth.credentials.token
-    name     = auth.info.name
+    email         = auth.info.email
+    provider      = auth.provider
+    uid           = auth.uid
+    token         = auth.credentials.token
+    refresh_token = auth.credentials.refresh_token
+    name          = auth.info.name
 
     # Set up a password
     password = Devise.friendly_token[0,20]
@@ -24,10 +25,12 @@ class User < ActiveRecord::Base
 
     # Update or create user
     if user
-      user.update(email: email, provider: provider, uid: uid, token: token, password: password, name: name)
+      user.update(email: email, provider: provider, uid: uid, token: token, 
+                  refresh_token: refresh_token, password: password, name: name)
       user
     else 
-      user = User.new(email: email, provider: provider, uid: uid, token: token, password: password, name: name)
+      user = User.new(email: email, provider: provider, uid: uid, token: token, 
+                      refresh_token: refresh_token, password: password, name: name)
       user.save!
       user
     end

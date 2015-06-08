@@ -262,6 +262,7 @@ Devise.setup do |config|
   config.omniauth :google_oauth2, 
   "780764558398-aenvugc27b9pnvagfdlmn5ibqcu7mv7f.apps.googleusercontent.com", 
   "R3NuzuvaORZX7kMFvBsPirRu", 
-  :scope => ["profile", "email", "openid"]
+  scope: ["profile", "email", "openid"],
+  prompt: 'consent'
 
 end

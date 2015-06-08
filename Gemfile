@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Ruby directive for current stable ruby version
 ruby "2.2.2"
 
+# For reading JSON files
+gem 'json', :require => true
+
 # Omniauth for login via FB, Twitter, etc.
 gem 'omniauth'
 gem 'omniauth-facebook'
