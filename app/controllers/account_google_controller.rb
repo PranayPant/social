@@ -7,8 +7,6 @@ class GoogleFeaturesController < ApplicationController
 	@@scopes = {'gmail': 'https://mail.google.com/'}
   
   def authorize
-
-  	byebug
 	
 		feature = params[:feature]
 
