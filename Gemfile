@@ -3,8 +3,17 @@ source 'https://rubygems.org'
 # Ruby directive for current stable ruby version
 ruby "2.0.0"
 
+# Timezone info for Wondows
+gem 'tzinfo-data'
+
+# SSL handling for Windows
+gem 'certified'
+
 # For reading JSON files
 gem 'json', :require => true
+
+# Web re-directs
+gem 'sinatra', :require => true
 
 # Omniauth for login via FB, Twitter, etc.
 gem 'omniauth'
@@ -19,12 +28,16 @@ gem 'google-api-client', git: "https://github.com/google/google-api-ruby-client.
 
 # Ensure deployment with Heroku goes smoothly
 gem 'rails_12factor', group: :production
+
 # Use Puma as the production server
 gem 'puma'
+
 # Use PostgreSQL
 gem 'pg'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Bootstrap for Sass
@@ -44,6 +57,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 #gem 'sdoc', '~> 0.4.0', group: :doc
+
 # Devise for authentication and authorization
 gem 'devise', git: 'https://github.com/plataformatec/devise'
 

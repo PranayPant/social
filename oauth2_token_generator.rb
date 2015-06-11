@@ -43,3 +43,18 @@ puts "\n\n... and when that access_token expires in 1 hour, use this to refresh 
 puts "refresh_client_obj = OAuth2::Client.new(client_id, client_secret, {:site => 'https://accounts.google.com', :authorize_url => '/o/oauth2/auth', :token_url => '/o/oauth2/token'})"
 puts "refresh_access_token_obj = OAuth2::AccessToken.new(refresh_client_obj, '#{access_token_obj.token}', {refresh_token: '#{access_token_obj.refresh_token}'})"
 puts "refresh_access_token_obj.refresh!"
+
+redirect_uri = 'http://localhost:3000/users/auth/google_oauth2/callback'
+
+client_hash = { site: 'https://accounts.google.com', authorize_url: "/o/oauth2/auth", 
+	              token_url: "/o/oauth2/token" }
+token_hash  = { redirect_uri: redirect_uri, token_method: :post }
+
+auth_client_obj = OAuth2::Client.new(client_id, client_secret, client_hash)
+	
+token_endpoint  = auth_client_obj.auth_code.authorize_url(scope: scope, 
+access_type: "offline", redirect_uri: redirect_uri, approval_prompt: 'force')
+		
+redirect_uri (token_endpoint)
+access_token_obj = auth_client_obj.auth_code.get_token(code, token_hash)
+access_token = access_token_obj.token
