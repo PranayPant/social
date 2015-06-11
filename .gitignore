@@ -21,3 +21,6 @@ vendor/cache/ruby/2.2.0/bundler/gems/*
 
 # Secrets
 *secret*
+
+# Windows fix
+Gemfile.lock
