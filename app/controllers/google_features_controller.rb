@@ -4,7 +4,7 @@ class GoogleFeaturesController < ApplicationController
 	require 'net/http'
 	require 'google/api_client'
 
-	@@scopes = {'gmail' => 'email'}
+	@@scopes = { 'gmail' => 'email' }
   
   def authorize
 
@@ -21,9 +21,6 @@ class GoogleFeaturesController < ApplicationController
 
 		res = Net::HTTP.get_response(URI(auth_uri))
 		code = res.code
-
-		logger.debug "DEBUGGINGGGGGGGGGGGGGG#"
-		logger.debug code
 
 	end
 
