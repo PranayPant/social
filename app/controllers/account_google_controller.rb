@@ -21,7 +21,6 @@ class GoogleFeaturesController < ApplicationController
     # Redirect to auth_uri and get code
     redirect_to (auth_uri)
     res = Net::HTTP.get_response(URI(auth_uri))
-
     auth_client.code = res.code
 
 
