@@ -14,8 +14,9 @@ class GoogleFeaturesController < ApplicationController
     auth_client = client_secrets.to_authorization
 
     scope = @@scopes[feature]
+    redirect_uri = 'http://www.my-social-hub.herokuapp.com/oauth2callback'
 
-    auth_client.update!(scope: scope)
+    auth_client.update!(scope: scope, redirect_uri: redirect_uri)
     auth_uri = auth_client.authorization_uri
 
     # Redirect to auth_uri and get code
