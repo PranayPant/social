@@ -8,13 +8,9 @@ class GoogleFeaturesController < ApplicationController
 
   def authorize
 
-    feature = params[:feature]
-
-    client_secrets = Google::APIClient::ClientSecrets.load
-    auth_client = client_secrets.to_authorization
-
-    scope = @@scopes[feature]
     
+
+
 
   end
 	
