@@ -18,7 +18,7 @@ class GoogleFeaturesController < ApplicationController
 
     auth_client.update!(
       :scope => 'https://www.googleapis.com/auth/drive.metadata.readonly',
-      :redirect_uri => 'http://www.my-social-hub.herokuapp.com/oauth2callback'
+      :redirect_uri => 'https://www.google.com'
     )
     auth_uri = auth_client.authorization_uri
 
